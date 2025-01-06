@@ -1,7 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import ARModel from './components/ARModel'
+import ARModel from './components/ARModel';
+import './App.css';
 
 function App() {
 
