@@ -13,7 +13,7 @@ const ARModel = () => {
 
   const wristLandmarkIndex = 0
 
-  const initializeAR = () => {
+  const initializeAR = async () => {
     const videoElement = videoRef.current
     const canvasElement = canvasRef.current
 
@@ -104,7 +104,7 @@ const ARModel = () => {
   }
 
   useEffect(() => {
-    setupThreeJS()
+    initializeAR()
 
     return () => cleanUp()
   }, [])
